@@ -1,0 +1,39 @@
+.sorting {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.sorting__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.sorting__list {
+  width: 150px;
+  background-color: $white;
+  border-radius: 3px;
+  border: none;
+  opacity: 0.5;
+  transition: 0.5s;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+    transition: 0.5s;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .sorting {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .sorting__title {
+    font-size: 28px;
+    line-height: 35px;
+    margin-bottom: 0;
+  }
+}

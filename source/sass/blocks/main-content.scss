@@ -1,0 +1,15 @@
+.main-content {
+  background-color: $grey3;
+}
+
+.main-content__main-block {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $desktopWidth) {
+  .main-content__main-block {
+    flex-direction: row;
+    column-gap: 15px;
+  }
+}
